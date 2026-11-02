@@ -32,12 +32,12 @@ d'IA compatible agentique : le studio 3D »**, un dépôt par module :
 
 | Module | Dépôt |
 |---|---|
-| 1. Un studio 3D pour toute l'organisation (serveur MCP) | [clic-par-clic-studio3d-01-studio-mcp](https://github.com/guilhem-/clic-par-clic-studio3d-01-studio-mcp) |
-| 2. Passer le studio à l'échelle | [clic-par-clic-studio3d-02-echelle](https://github.com/guilhem-/clic-par-clic-studio3d-02-echelle) |
-| 3. Observer le studio avec Grafana | [clic-par-clic-studio3d-03-grafana](https://github.com/guilhem-/clic-par-clic-studio3d-03-grafana) |
-| 4. Marquer les rendus générés par IA | [clic-par-clic-studio3d-04-marquage](https://github.com/guilhem-/clic-par-clic-studio3d-04-marquage) |
-| 5. Une bibliothèque d'assets pour tous les rendus | [clic-par-clic-studio3d-05-assets](https://github.com/guilhem-/clic-par-clic-studio3d-05-assets) |
-| 6. Télécharger la scène Blender (stockage S3) | [clic-par-clic-studio3d-06-stockage-s3](https://github.com/guilhem-/clic-par-clic-studio3d-06-stockage-s3) |
+| 1. Un studio 3D pour toute l'organisation (serveur MCP) | [clic-par-clic-studio3d-01-studio-mcp](https://github.com/guilhembon/clic-par-clic-studio3d-01-studio-mcp) |
+| 2. Passer le studio à l'échelle | [clic-par-clic-studio3d-02-echelle](https://github.com/guilhembon/clic-par-clic-studio3d-02-echelle) |
+| 3. Observer le studio avec Grafana | [clic-par-clic-studio3d-03-grafana](https://github.com/guilhembon/clic-par-clic-studio3d-03-grafana) |
+| 4. Marquer les rendus générés par IA | [clic-par-clic-studio3d-04-marquage](https://github.com/guilhembon/clic-par-clic-studio3d-04-marquage) |
+| 5. Une bibliothèque d'assets pour tous les rendus | [clic-par-clic-studio3d-05-assets](https://github.com/guilhembon/clic-par-clic-studio3d-05-assets) |
+| 6. Télécharger la scène Blender (stockage S3) | [clic-par-clic-studio3d-06-stockage-s3](https://github.com/guilhembon/clic-par-clic-studio3d-06-stockage-s3) |
 
 Ce module se branche sur le studio du **module 6** (image `studio3d:5`, bibliothèque d'assets,
 stockage S3 branché).
@@ -63,7 +63,7 @@ stockage S3 branché).
 3. **Avancé › En-têtes HTTP** : `{"X-Utilisateur-Email": "{{USER_EMAIL}}"}`. Open WebUI remplace
    aussi `{{USER_ID}}`, `{{USER_NAME}}`, `{{USER_ROLE}}`, `{{USER_GROUPS}}` (le module 2 ajoute
    `X-Utilisateur-Id: {{USER_ID}}`, voir le dépôt
-   [clic-par-clic-integration-02-notifications](https://github.com/guilhem-/clic-par-clic-integration-02-notifications)).
+   [clic-par-clic-integration-02-notifications](https://github.com/guilhembon/clic-par-clic-integration-02-notifications)).
 4. **Liste de filtrage des fonctions par nom** : `soumettre_rendu, etat_rendu, mes_rendus,
    lister_assets` (des noms sans « ! » forment une liste d'autorisation).
 5. **Contrôle d'accès › Ajouter un accès** : le groupe « Graphistes ». **Vérifier la connexion**,
@@ -118,7 +118,7 @@ Un compte hors du groupe ne voit ni le modèle ni la connexion.
 
 - Module suivant : **Prévenir l'utilisateur quand son rendu est prêt** (message direct d'un compte
   robot, en-tête `{{USER_ID}}`) —
-  [clic-par-clic-integration-02-notifications](https://github.com/guilhem-/clic-par-clic-integration-02-notifications).
+  [clic-par-clic-integration-02-notifications](https://github.com/guilhembon/clic-par-clic-integration-02-notifications).
 - Construire le studio : série « Créer un service d'IA compatible agentique : le studio 3D » (dépôts
   ci-dessus).
 
